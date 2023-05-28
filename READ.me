@@ -1,0 +1,10 @@
+SETUP Projects:
+
+DJANGO:
+docker run --rm -v "D:\pycharm_projects\django_postgresql_angular:/app" -w /app python:3.9-alpine sh -c "pip install django && django-admin startproject myproject"
+
+ANGULAR:
+docker run --rm -v "D:\pycharm_projects\django_postgresql_angular:/app" -w /app node:16-alpine sh -c "npm install -g @angular/cli && ng new myapp --defaults"
+
+
+docker-compose up --build
