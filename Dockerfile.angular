@@ -4,17 +4,17 @@ FROM node:16-alpine
 # Install the Angular CLI globally
 RUN npm install -g @angular/cli
 
-# Copy package.json and package-lock.json
-COPY /myapp /app
-
 # Set the working directory in the container
 WORKDIR /app
+
+# Copy package.json and package-lock.json
+COPY /myapp/package*.json ./
 
 # Install dependencies
 RUN npm install
 
 # Copy the project code into the container
-COPY . .
+COPY /myapp .
 
 # Build the Angular app
 RUN ng build --configuration=development
