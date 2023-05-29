@@ -18,11 +18,10 @@ services:
       - 8000:8000
     depends_on:
       - db
+      - angular
   angular:
     build:
       context: .
       dockerfile: Dockerfile.angular
     ports:
       - 4300:4200
-    depends_on:
-      - django

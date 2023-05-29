@@ -1,7 +1,11 @@
 SETUP Projects:
 
 DJANGO:
-docker run --rm -v "D:\pycharm_projects\django_postgresql_angular:/app" -w /app python:3.9-alpine sh -c "pip install django && django-admin startproject myproject"
+    docker run --rm -v "D:\pycharm_projects\django_postgresql_angular:/app" -w /app python:3.9-alpine sh -c "pip install django && django-admin startproject myproject"
+
+    MIGRATE:
+    docker-compose exec django python myproject/manage.py migrate
+
 
 ANGULAR:
 docker run --rm -v "D:\pycharm_projects\django_postgresql_angular:/app" -w /app node:16-alpine sh -c "npm install -g @angular/cli && ng new myapp --defaults"
