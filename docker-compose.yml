@@ -24,3 +24,5 @@ services:
       dockerfile: Dockerfile.angular
     ports:
       - 4300:4200
+    depends_on:
+      - django
