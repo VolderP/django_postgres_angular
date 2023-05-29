@@ -6,6 +6,9 @@ DJANGO:
     MIGRATE:
     docker-compose exec django python myproject/manage.py migrate
 
+    Startapp:
+    docker-compose exec django python myproject/manage.py startapp base
+
 
 ANGULAR:
 docker run --rm -v "D:\pycharm_projects\django_postgresql_angular:/app" -w /app node:16-alpine sh -c "npm install -g @angular/cli && ng new myapp --defaults"
