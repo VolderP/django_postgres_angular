@@ -13,7 +13,7 @@ services:
       context: .
       dockerfile: Dockerfile.django
     volumes:
-      - .:/app
+      - ./myproject:/app
     ports:
       - 8000:8000
     depends_on:
@@ -23,5 +23,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.angular
+    volumes:
+      - ./myapp:/app
     ports:
       - 4300:4200
