@@ -16,6 +16,4 @@ export class CameraComponent {
   shutter_type = 'Global'
   synchronization = 'Hardware'
   lens_mount = 'S'
-
-
 }
