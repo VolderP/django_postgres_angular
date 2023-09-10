@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #551a8b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #551a8b;
+  overflow: hidden;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.featured-products h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #551a8b;
+  color: #fff;
+}
+
+
+
